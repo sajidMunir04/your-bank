@@ -1,0 +1,13 @@
+#root {
+  width: 100%;
+  height: calc(100%);
+}
+
+:root{
+  --padding-sides : 8%;
+}
+
+body{
+  margin: 0%;
+  background-color: #0b0b0b;
+}

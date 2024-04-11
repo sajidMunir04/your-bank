@@ -1,4 +1,5 @@
 import LayoutHeaderWithButtons from "../shared/LayoutHeaderWithButtons";
+import TestimonialCard from "./TestimonialCard";
 
 function TestimonialLayout()
 {
@@ -9,8 +10,25 @@ function TestimonialLayout()
         </div>
         <div>
             <div>
-                
+                <TestimonialCard imageLink="/Icon(4).png" testimonialText="I recently started my own business, and YourBank 
+                has been instrumental in helping me set up my business accounts 
+                and secure the financing I needed. Their expert guidance and tailored 
+                solutions have been invaluable." customerName="John D"/>
+            </div>
+            <div>
+                <TestimonialCard imageLink="/Icon(4).png" testimonialText="I recently started my own business, and YourBank 
+                has been instrumental in helping me set up my business accounts 
+                and secure the financing I needed. Their expert guidance and tailored 
+                solutions have been invaluable." customerName="John D"/>
+            </div>
+            <div>
+                <TestimonialCard imageLink="/Icon(4).png" testimonialText="I recently started my own business, and YourBank 
+                has been instrumental in helping me set up my business accounts 
+                and secure the financing I needed. Their expert guidance and tailored 
+                solutions have been invaluable." customerName="John D"/>
             </div>
         </div>
     </div>);
 }
+
+export default TestimonialLayout;

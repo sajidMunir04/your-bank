@@ -8,6 +8,9 @@ import ProductsLayout from './components/home/ProductsLayout'
 import UseCasesLayout from './components/home/UseCasesLayout'
 import FeaturesLayout from './components/home/FeaturesLayout'
 import FAQLayout from './components/home/FAQLayout'
+import TestimonialLayout from './components/home/TestimonialLayout'
+import PromotionalBanner from './components/shared/PromotionalBanner'
+import FooterTemplate from './components/shared/FooterTemplate'
 
 function App() {
 
@@ -19,6 +22,9 @@ function App() {
       <UseCasesLayout/>
       <FeaturesLayout/>
       <FAQLayout/>
+      <TestimonialLayout/>
+      <PromotionalBanner/>
+      <FooterTemplate/>
     </>
   )
 }

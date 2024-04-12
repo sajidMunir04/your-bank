@@ -1,4 +1,5 @@
 import LinkButtonColored from "./LinkButtonColored";
+import styles from "./PromotionalBanner.module.css";
 
 interface Props{
     headingTextWhite: string,
@@ -9,11 +10,11 @@ interface Props{
 
 function PromotionalBanner(props : Props)
 {
-    return (<div>
-        <div>
+    return (<div className={styles.container}>
+        <div className={styles.backgroundContainer}>
 
         </div>
-        <div>
+        <div className={styles.contentContainer}>
             <div>
                 <h2>{props.headingTextWhite}<span>{props.headingTextColored}</span></h2>
                 <p>{props.description}</p>

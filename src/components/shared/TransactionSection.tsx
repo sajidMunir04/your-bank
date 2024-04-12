@@ -1,21 +1,27 @@
+import PreviousTransactionCard from "./PreviousTransactionCard";
+import styles from "./TransactionSection.module.css";
 
 function TransactionSection()
 {
-    return (<div>
-        <div>
-            <p>Your transactions</p>
-            <div>
+    return (<div className={styles.container}>
+        <div className={styles.backgroundSection}>
 
-            </div>
         </div>
-        <div>
-            <p>Money Exchange</p>
+        <div className={styles.subContainer}>
             <div>
-
+                <p>Your Transactions</p>
             </div>
-        </div>
-        <div>
-            <a href="#">Exchange</a>
+            <div>
+                <div>
+                    <PreviousTransactionCard name="Joel Kenley" amount={-68}/>
+                </div>
+                <div>
+                    <PreviousTransactionCard name="Joel Kenley" amount={-68}/>
+                </div>
+                <div>
+                    <PreviousTransactionCard name="Joel Kenley" amount={-68}/>
+                </div>
+            </div>
         </div>
     </div>);
 }

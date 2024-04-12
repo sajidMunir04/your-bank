@@ -1,0 +1,42 @@
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 80px;
+}
+
+.subContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.infoItem{
+    margin: 0%;
+    font-family: Lexend-Light;
+    font-size: 14px;
+}
+
+.infoItemDetail{
+    margin: 0%;
+    font-family: Lexend-Light;
+    font-size: 14px;
+}
+
+.imageContainer{
+    background-color: var(--color);
+}

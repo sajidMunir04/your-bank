@@ -6,7 +6,7 @@ interface Props{
     description: string
 }
 
-function BenefitCard(props : Props)
+function InfoCard(props : Props)
 {
     return (<div>
         <div>
@@ -23,4 +23,4 @@ function BenefitCard(props : Props)
     </div>);
 }
 
-export default BenefitCard;
+export default InfoCard;

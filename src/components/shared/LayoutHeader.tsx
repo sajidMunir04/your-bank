@@ -1,5 +1,6 @@
 import LayoutDescription from "./LayoutDescription";
 import LayoutHeading from "./LayoutHeading";
+import styles from "./LayoutHeader.module.css";
 
 interface Props{
     headingTextWhite : string,
@@ -9,7 +10,7 @@ interface Props{
 
 function LayoutHeader(props : Props)
 {
-    return (<div>
+    return (<div className={styles.container}>
         <LayoutHeading headingTextWhite={props.headingTextWhite} 
         headingTextColored={props.headingTextColored}/>
         <LayoutDescription text={props.description}/>

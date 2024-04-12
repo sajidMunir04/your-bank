@@ -1,5 +1,5 @@
 import LayoutHeader from "../shared/LayoutHeader";
-import BenefitCard from "./BenefitCard";
+import BenefitCard from "../shared/InfoCard";
 
 
 function BenefitsLayout()

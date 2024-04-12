@@ -1,0 +1,10 @@
+
+.container{
+    width: 100%;
+    padding: 0% var(--padding-sides);
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+}

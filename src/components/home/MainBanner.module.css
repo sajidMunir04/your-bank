@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0% var(--padding-sides);
+    margin-top: 4%;
+}
+
+.section{
+    width: 44%;
+    height: 100%;
+}
+
+.headingText{
+    font-family: Lexend-Medium;
+    font-size: 42px;
+}
+
+.coloredText{
+    color: var(--color);
+}
+
+.infoPoint{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #262626;
+    width: max-content;
+    padding: 0% 2%;
+    height: fit-content;
+    border-radius: 50px;
+}
+.infoPointText{
+    font-family: Lexend-Light;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text{
+    font-family: Lexend-Light;
+    font-size: 16px;
+}
+
+.buttonContainer{
+    width: 24%;
+    height: 10%;
+}

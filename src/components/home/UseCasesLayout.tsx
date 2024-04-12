@@ -1,37 +1,30 @@
 import LayoutHeader from "../shared/LayoutHeader";
-
+import UseCaseCard, { InfoPoint, StatsPoint } from "./UseCaseCard";
+import styles from "./UseCasesLayout.module.css";
 
 function UseCasesLayout()
 {
-    return (<div>
+    const infoPointOne : InfoPoint = {imageLink: '/Icon(11).png', headingText: 'Managing Personal Finances'};
+    const infoPointTwo : InfoPoint = {imageLink: '/Icon(11).png', headingText: 'Managing Personal Finances'};
+    const infoPointThree : InfoPoint = {imageLink: '/Icon(11).png', headingText: 'Managing Personal Finances'};
+    const infoPointFour : InfoPoint = {imageLink: '/Icon(11).png', headingText: 'Managing Personal Finances'};
+
+    const statPointOne : StatsPoint = {figure: 78, text: 'Secure Retirement Planning'};
+    return (<div className={styles.container}>
         <div>
         <LayoutHeader headingTextWhite="" headingTextColored="Use Cases" description="At YourBank, 
         we cater to the diverse needs of individuals and businesses alike, offering 
         a wide range of financial solutions"/>
         </div>
-        <div>
-            <div>
-                <div>
-
-                </div>
-                <div>
-                    <h3>
-                    For Individuals
-                    </h3>
-                    <p>For individuals, our mortgage services pave the way to 
-                        homeownership, and our flexible personal loans provide vital support 
-                        during various life milestones. We also prioritize retirement planning, 
-                        ensuring a financially secure future for our customers</p>
-                </div>
-            </div>
-            <div>
-                <div>
-
-                </div>
-                <div>
-                    
-                </div>
-            </div>
+        <div className={styles.contentContainer}>
+            <UseCaseCard heading="For Individuals" description="For individuals, our mortgage services pave the way to homeownership, 
+            and our flexible personal loans provide vital support during various life milestones. 
+            We also prioritize retirement planning, ensuring a financially secure future for our customers" textSectionOrder={2} 
+            infoPoints={[infoPointOne,infoPointTwo,infoPointThree,infoPointFour]} statPoints={[statPointOne,statPointOne,statPointOne]} />
+            <UseCaseCard heading="For Individuals" description="For individuals, our mortgage services pave the way to homeownership, 
+            and our flexible personal loans provide vital support during various life milestones. 
+            We also prioritize retirement planning, ensuring a financially secure future for our customers" textSectionOrder={2} 
+            infoPoints={[infoPointOne,infoPointTwo,infoPointThree,infoPointFour]} statPoints={[statPointOne,statPointOne,statPointOne]} />
         </div>
     </div>);
 }

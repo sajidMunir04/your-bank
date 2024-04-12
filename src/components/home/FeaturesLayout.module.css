@@ -1,0 +1,21 @@
+
+.container{
+    width: 100%;
+    padding: 0% var(--padding-sides);
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.featureDetailSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

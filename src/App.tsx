@@ -23,7 +23,10 @@ function App() {
       <FeaturesLayout/>
       <FAQLayout/>
       <TestimonialLayout/>
-      <PromotionalBanner/>
+      <PromotionalBanner headingTextWhite='Start your financial journey with ' 
+      headingTextColored='YourBank today!' buttonText='Open Account' description='Ready to take control of your finances? Join YourBank now, 
+      and let us help you achieve your financial goals with our tailored solutions and 
+      exceptional customer service'/>
       <FooterTemplate/>
     </>
   )

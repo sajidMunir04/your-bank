@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Lexend-Black;
+    src: url(../public/fonts/lexend/Lexend-Black.ttf);
+}
+
+@font-face {
+    font-family: Lexend-Bold;
+    src: url(../public/fonts/lexend/Lexend-Bold.ttf);
+}
+
+@font-face {
+    font-family: Lexend-ExtraBold;
+    src: url(../public/fonts/lexend/Lexend-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Lexend-ExtraLight;
+    src: url(../public/fonts/lexend/Lexend-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Lexend-Light;
+    src: url(../public/fonts/lexend/Lexend-Light.ttf);
+}
+
+@font-face {
+    font-family: Lexend-Medium;
+    src: url(../public/fonts/lexend/Lexend-Medium.ttf);
+}
+
+@font-face {
+    font-family: Lexend-Regular;
+    src: url(../public/fonts/lexend/Lexend-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lexend-SemiBold;
+    src: url(../public/fonts/lexend/Lexend-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: Lexend-Thin;
+    src: url(../public/fonts/lexend/Lexend-Thin.ttf);
+}

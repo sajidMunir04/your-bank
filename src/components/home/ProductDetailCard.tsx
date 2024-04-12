@@ -1,4 +1,4 @@
-
+import stlyes from "./ProductDetailCard.module.css";
 
 interface Props {
     imageLink: string,
@@ -9,7 +9,7 @@ interface Props {
 
 function ProductDetailCard(props : Props)
 {
-    return (<div>
+    return (<div className={stlyes.container}>
         <div>
             <img src={props.imageLink}/>
         </div>

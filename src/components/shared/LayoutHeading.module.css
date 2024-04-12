@@ -1,0 +1,11 @@
+
+
+.headingText{
+    font-family: Lexend-Medium;
+    font-size: 42px;
+    color: var(--white-color);
+}
+
+.coloredText{
+    color: var(--color);
+}

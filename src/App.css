@@ -5,9 +5,12 @@
 
 :root{
   --padding-sides : 8%;
+  --color: #CAFF33;
+  --white-color: #FFFFFF;
 }
 
 body{
   margin: 0%;
-  background-color: #0b0b0b;
+  background-color: #191919;
+  color: white;
 }

@@ -1,4 +1,4 @@
-
+import styles from "./LinkButtonColored.module.css";
 
 export interface LinkButtonProps {
     buttonText : string,
@@ -7,8 +7,8 @@ export interface LinkButtonProps {
 
 function LinkButtonColored(props : LinkButtonProps)
 {
-    return (<div>
-        <a href={props.link}>{props.buttonText}</a>
+    return (<div className={styles.container}>
+        <a className={styles.linkButtonColored} href={props.link}>{props.buttonText}</a>
     </div>);
 }
 

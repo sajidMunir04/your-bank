@@ -1,4 +1,5 @@
-import stlyes from "./ProductDetailCard.module.css";
+import GradientIconBackground from "../shared/GradientIconBackground";
+import styles from "./ProductDetailCard.module.css";
 
 interface Props {
     imageLink: string,
@@ -9,15 +10,15 @@ interface Props {
 
 function ProductDetailCard(props : Props)
 {
-    return (<div className={stlyes.container}>
+    return (<div className={styles.container}>
         <div>
-            <img src={props.imageLink}/>
+            <GradientIconBackground imageLink={props.imageLink}/>
         </div>
         <div>
-            <p>{props.heading}</p>
+            <p className={styles.headingText}>{props.heading}</p>
         </div>
         <div>
-            <p>{props.description}</p>
+            <p className={styles.descriptionText}>{props.description}</p>
         </div>
     </div>);
 }

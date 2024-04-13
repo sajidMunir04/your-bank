@@ -7,6 +7,7 @@ interface Props{
     description: string;
     statPoints: StatsPoint[];
     textSectionOrder: number;
+    reverseOrder: boolean
 }
 
 export type InfoPoint = {
@@ -22,7 +23,7 @@ export type StatsPoint = {
 function UseCaseCard(props : Props)
 {
     return (<div className={styles.container}>
-        <div className={styles.contentSection}>
+        <div className={`${styles.contentSection} ${props.reverseOrder && styles.lastOrder}`}>
             <div className={styles.infoPoint}>
                 <div>
                     <img src={props.infoPoints[0].imageLink}/>
@@ -48,23 +49,23 @@ function UseCaseCard(props : Props)
                 <p>{props.infoPoints[3].headingText}</p>
             </div>
         </div>
-        <div className={styles.textSection}>
+        <div className={`${styles.textSection} ${props.reverseOrder && styles.firstOrder}`}>
             <div>
-                <p>{props.heading}</p>
-                <p>{props.description}</p>
+                <p className={styles.headingText}>{props.heading}</p>
+                <p className={styles.descriptionText}>{props.description}</p>
             </div>
             <div className={styles.statsSection}>
                 <div>
-                    <p>{props.statPoints[0].figure}%</p>
-                    <p>{props.statPoints[0].text}</p>
+                    <p className={styles.figuresText}>{props.statPoints[0].figure}%</p>
+                    <p className={styles.figureInfoText}>{props.statPoints[0].text}</p>
                 </div>
                 <div>
-                    <p>{props.statPoints[1].figure}%</p>
-                    <p>{props.statPoints[1].text}</p>
+                    <p className={styles.figuresText}>{props.statPoints[1].figure}%</p>
+                    <p className={styles.figureInfoText}>{props.statPoints[1].text}</p>
                 </div>
                 <div>
-                    <p>{props.statPoints[2].figure}%</p>
-                    <p>{props.statPoints[2].text}</p>
+                    <p className={styles.figuresText}>{props.statPoints[2].figure}%</p>
+                    <p className={styles.figureInfoText}>{props.statPoints[2].text}</p>
                 </div>
             </div>
             <div>

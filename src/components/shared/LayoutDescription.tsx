@@ -1,3 +1,5 @@
+import styles from "./LayoutDescription.module.css";
+
 
 interface Props{
     text: string
@@ -5,7 +7,7 @@ interface Props{
 
 
 function LayoutDescription(props : Props){
-    return (<p>
+    return (<p className={styles.text}>
         {props.text}
     </p>);
     

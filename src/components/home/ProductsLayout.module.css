@@ -5,9 +5,12 @@
     flex-direction: column;
     padding: 0% var(--padding-sides);
     margin-top: 6%;
+    box-sizing: border-box;
 }
 
 .contentContainer{
     display: flex;
     flex-direction: row;
+    margin-top: 6%;
+    justify-content: center;
 }

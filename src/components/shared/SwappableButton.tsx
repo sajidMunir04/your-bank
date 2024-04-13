@@ -1,3 +1,5 @@
+import styles from "./SwappableButton.module.css";
+
 
 interface Props {
     leftButtonText : string,
@@ -8,9 +10,9 @@ interface Props {
 
 function SwappableButton(props : Props)
 {
-    return (<div>
-            <a href={props.leftButtonLink}>{props.leftButtonText}</a>
-            <a href={props.rightButtonLink}>{props.rightButtonText}</a>
+    return (<div className={styles.container}>
+            <a className={styles.singleButton} href={props.leftButtonLink}>{props.leftButtonText}</a>
+            <a className={styles.singleButton} href={props.rightButtonLink}>{props.rightButtonText}</a>
     </div>);
 }
 

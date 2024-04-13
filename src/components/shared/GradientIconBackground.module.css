@@ -1,0 +1,7 @@
+.container{
+    background-color: var(--gray-11);
+}
+
+.subContainer{
+    background-color: var(--green-60);
+}

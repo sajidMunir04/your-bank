@@ -15,11 +15,11 @@ function PromotionalBanner(props : Props)
 
         </div>
         <div className={styles.contentContainer}>
-            <div>
-                <h2>{props.headingTextWhite}<span>{props.headingTextColored}</span></h2>
+            <div className={styles.textContainer}>
+                <h2 className={styles.mainText}>{props.headingTextWhite}<span className={styles.mainTextColored}>{props.headingTextColored}</span></h2>
                 <p>{props.description}</p>
             </div>
-            <div>
+            <div className={styles.butttonContainer}>
                 <LinkButtonColored buttonText={props.buttonText} link="#"/>
             </div>
         </div>

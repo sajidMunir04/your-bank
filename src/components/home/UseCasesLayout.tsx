@@ -20,11 +20,11 @@ function UseCasesLayout()
             <UseCaseCard heading="For Individuals" description="For individuals, our mortgage services pave the way to homeownership, 
             and our flexible personal loans provide vital support during various life milestones. 
             We also prioritize retirement planning, ensuring a financially secure future for our customers" textSectionOrder={2} 
-            infoPoints={[infoPointOne,infoPointTwo,infoPointThree,infoPointFour]} statPoints={[statPointOne,statPointOne,statPointOne]} />
+            infoPoints={[infoPointOne,infoPointTwo,infoPointThree,infoPointFour]} statPoints={[statPointOne,statPointOne,statPointOne]} reverseOrder={false}/>
             <UseCaseCard heading="For Individuals" description="For individuals, our mortgage services pave the way to homeownership, 
             and our flexible personal loans provide vital support during various life milestones. 
             We also prioritize retirement planning, ensuring a financially secure future for our customers" textSectionOrder={2} 
-            infoPoints={[infoPointOne,infoPointTwo,infoPointThree,infoPointFour]} statPoints={[statPointOne,statPointOne,statPointOne]} />
+            infoPoints={[infoPointOne,infoPointTwo,infoPointThree,infoPointFour]} statPoints={[statPointOne,statPointOne,statPointOne]} reverseOrder={true}/>
         </div>
     </div>);
 }

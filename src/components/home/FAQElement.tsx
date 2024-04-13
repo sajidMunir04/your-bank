@@ -1,3 +1,5 @@
+import styles from './FAQElement.module.css';
+
 
 interface Props {
     question: string,
@@ -6,7 +8,7 @@ interface Props {
 
 function FAQElement(props : Props)
 {
-    return(<div>
+    return(<div className={styles.container}>
         <div>
             <p>{props.question}</p>
         </div>

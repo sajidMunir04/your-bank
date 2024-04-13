@@ -10,9 +10,9 @@ function PreviousTransactionCard(props : Props)
 {
     return (<div className={styles.container}>
         <div className={styles.subContainer}>
-            <div>
+            <div className={styles.imageSection}>
                 <div className={styles.imageContainer}>
-                    <img src="/Icon(12).png"/>
+                    <p className={styles.arrows}>&#8644;</p>
                 </div>
             </div>
             <div className={styles.infoContainer}>
@@ -20,8 +20,9 @@ function PreviousTransactionCard(props : Props)
                 <p className={styles.infoItemDetail}>{props.name}</p>
             </div>
         </div>
-        <div>
-            <p>{props.amount < 0 && '-'}${Math.abs(props.amount)}</p>
+        <div className={styles.amountContainer}>
+            <p className={styles.amountText}>{props.amount < 0 && '-'}</p>
+            <p className={styles.amountText}>${Math.abs(props.amount)}</p>
         </div>
     </div>);
 }

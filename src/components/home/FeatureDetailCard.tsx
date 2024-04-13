@@ -1,3 +1,5 @@
+import styles from "./FeatureDetailCard.module.css";
+
 
 interface Props {
     heading: string,
@@ -7,7 +9,7 @@ interface Props {
 
 function FeatureDetailCard(props : Props)
 {
-    return (<div>
+    return (<div className={styles.container}>
         <div>
             <p>{props.heading}</p>
             <div>

@@ -1,22 +1,69 @@
 
 .container{
     width: 100%;
-    
+    height: 500px;
+    display: grid;
 }
 
 .subContainer{
     width: 80%;
+    height: 100%;
     margin-left: 0%;
-    border: 1px solid #E4E4E7;
+    border: 1px solid var(--gray-15);
     border-radius: 8px;
+    padding: 2% 6%;
+    border-collapse: collapse;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
+.previousTransactionsSection{
+    height: 40%;
+}
+
+.infoText{
+    font-family: Lexend-Medium;
+    font-size: 18px;
+}
+
+.moneyConversionSection{
+    height: 38%;
+}
 
 .backgroundSection{
-    
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 .moneyConverter{
     display: flex;
     flex-direction: row;
+    background-color: var(--gray-11);
+    height: 80%;
+    justify-content: space-between;
+}
+
+.currencySection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.exchangeButtonContainer{
+    background-color: black;
+    background: linear-gradient(0deg,#d0ff4d3d,#d0ff4d11) 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    border-radius: 36px;
+}
+
+.button{
+    border: none;
+    margin: 0%;
+    padding: 0%;
+    background: none;
+    font-family: Lexend-Regular;
+    font-size: 15px;
+    color: var(--green-65);
 }

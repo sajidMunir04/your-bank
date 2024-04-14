@@ -8,11 +8,11 @@ function TransactionSection()
 
         </div>
         <div className={styles.subContainer}>
-            <div>
+            <div className={styles.previousTransactionsSection}>
                 <div>
-                    <p>Your Transactions</p>
+                    <p className={styles.infoText}>Your Transactions</p>
                 </div>
-                <div>
+                <div className={styles.previousTransactionsSection}>
                     <div>
                         <PreviousTransactionCard name="Joel Kenley" amount={-68}/>
                     </div>
@@ -24,11 +24,10 @@ function TransactionSection()
                     </div>
                 </div>
             </div>
-            <div>
-                <div><p>Money Exchange</p></div>
-                <div>
-                    <div className={styles.moneyConverter}>
-                        <div>
+            <div className={styles.moneyConversionSection}>
+                <div><p className={styles.infoText}>Money Exchange</p></div>
+                <div className={styles.moneyConverter}>
+                        <div className={styles.currencySection}>
                             <div>
                                 <select>
                                     <option>INR</option>
@@ -39,11 +38,11 @@ function TransactionSection()
                             </div>
                             <div>
                                 <div>
-                                    <p>{6556564}</p>
+                                    <input type="number" placeholder="000"/>
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className={styles.currencySection}>
                             <div>
                                 <select>
                                     <option>INR</option>
@@ -54,12 +53,14 @@ function TransactionSection()
                             </div>
                             <div>
                                 <div>
-                                    <p>{6556564}</p>
+                                    <input type="number" placeholder="000"/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+            </div>
+            <div className={styles.exchangeButtonContainer}>
+                <button className={styles.button}>Exchange</button>
             </div>
         </div>
     </div>);

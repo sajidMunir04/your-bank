@@ -3,7 +3,7 @@
     height: 100%;
     background-color: var(--gray-11);
     border: 1px solid #262626;
-    padding: 6% 2%;
+    box-sizing: border-box;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
@@ -12,9 +12,23 @@
 }
 
 .singleButton{
+    margin: 0%;
+    padding:  0%;
+    background: none;
+    border: none;
     display: inline-block;
     margin-inline: 6%;
     text-decoration: none;
     color: var(--white-color);
+    font-family: Lexend-Regular;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.selectedButton{
+    background-color: var(--green-60);
+    color: var(--gray-11);
+    padding: 4% 4%;
+    border-radius: 30px;
 }
 

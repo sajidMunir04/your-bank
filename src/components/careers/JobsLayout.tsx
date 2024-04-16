@@ -1,10 +1,11 @@
 import LayoutHeader from "../shared/LayoutHeader";
 import JobCard from "./JobCard";
+import styles from "./JobsLayout.module.css";
 
 
 function JobsLayout()
 {
-    return (<div>
+    return (<div className={styles.container}>
         <div>
             <LayoutHeader headingTextWhite="" headingTextColored="Job Openings" description="Explore exciting job openings at YourBank, where we value talent, 
             innovation, and a passion for customer service. Join our team and be part of shaping a brighter 

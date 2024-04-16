@@ -1,4 +1,5 @@
 import LinkButtonColored from "../shared/LinkButtonColored";
+import styles from "./JobCard.module.css";
 
 interface Props{
     jobHeading: string,
@@ -10,29 +11,31 @@ interface Props{
 
 function JobCard(props : Props)
 {
-    return (<div>
-        <p>{props.jobHeading}</p>
+    return (<div className={styles.container}>
+        <p className={styles.mainHeading}>{props.jobHeading}</p>
         <div>
             <p>Location: {props.location}</p>
             <p>Department: {props.department}</p>
         </div> 
-        <p>About this job</p>
+        <p className={styles.subHeading}>About this job</p>
         <p>{props.jobDescription}</p>
-        <p>Requirements & Qualifications</p>
-        <ul>
-            {props.requirements.map((jobreq) => <li>
-                <div>
+        <p className={styles.subHeading}>Requirements & Qualifications</p>
+        <ul className={styles.list}>
+            {props.requirements.map((jobreq) => <li className={styles.listItem}>
+                <div className={styles.listItemsContainer}>
                     <div>
                         <img src="/Icon(7).png"/>
                     </div>
-                    <p>
+                    <p className={styles.descriptionText}>
                         {jobreq}
                     </p>
                 </div>
             </li>)}
         </ul>
         <div>
-            <LinkButtonColored buttonText="Apply Now" link="#"/>
+            <div className={styles.linkButtonContainer}>
+                <LinkButtonColored buttonText="Apply Now" link="#"/>
+            </div>
         </div>
     </div>);
 }

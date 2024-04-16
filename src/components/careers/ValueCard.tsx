@@ -1,4 +1,4 @@
-
+import styles from "./ValueCard.module.css";
 
 interface Props {
     heading: string,
@@ -7,7 +7,7 @@ interface Props {
 
 function ValueCard(props : Props)
 {
-    return (<div>
+    return (<div className={styles.container}>
         <p>{props.heading}</p>
         <p>{props.description}</p>
     </div>);

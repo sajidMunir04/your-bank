@@ -1,0 +1,7 @@
+.container{
+    width: 48%;
+    border-left: 1px solid var(--green-60);
+    padding-left: 2%;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+}

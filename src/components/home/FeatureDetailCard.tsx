@@ -10,10 +10,10 @@ interface Props {
 function FeatureDetailCard(props : Props)
 {
     return (<div className={styles.container}>
-        <div>
-            <p>{props.heading}</p>
-            <div>
-                <img src="/Icon(3).png"/>
+        <div className={styles.subContainer}>
+            <p className={styles.headingText}>{props.heading}</p>
+            <div className={styles.arrowContainer}>
+                <img src="/images/arrows/arrow.svg"/>
             </div>
         </div>
         <div>

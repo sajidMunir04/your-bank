@@ -1,33 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import HeaderTemplate from './components/shared/HeaderTemplate'
-import MainBanner from './components/home/MainBanner'
-import ProductsLayout from './components/home/ProductsLayout'
-import UseCasesLayout from './components/home/UseCasesLayout'
-import FeaturesLayout from './components/home/FeaturesLayout'
-import FAQLayout from './components/home/FAQLayout'
-import TestimonialLayout from './components/home/TestimonialLayout'
-import PromotionalBanner from './components/shared/PromotionalBanner'
-import FooterTemplate from './components/shared/FooterTemplate'
+import { createBrowserRouter } from 'react-router-dom'
+import Home from './pages/Home'
+import Careers from './pages/Careers'
+import About from './pages/About'
+import Security from './pages/Security'
+import Login from './pages/Login'
+import SignUp from './pages/SignUp'
 
 function App() {
-
+    const routes = createBrowserRouter([
+      {
+        element: <Home/>
+      },
+      {
+        path: "/",
+        element: <Home/>
+      },
+      {
+        path: "/careers",
+        element: <Careers/>
+      },
+      {
+        path: "/about",
+        element: <About/>
+      },
+      {
+        path: "/security",
+        element: <Security/>
+      },
+      {
+        path: "/login",
+        element: <Login/>
+      },
+      {
+        path: "/signup",
+        element: <SignUp/>
+      }
+    ])
   return (
     <>
-      <HeaderTemplate/>
-      <MainBanner/>
-      <ProductsLayout/>
-      <UseCasesLayout/>
-      <FeaturesLayout/>
-      <FAQLayout/>
-      <TestimonialLayout/>
-      <PromotionalBanner headingTextWhite='Start your financial journey with ' 
-      headingTextColored='YourBank today!' buttonText='Open Account' description='Ready to take control of your finances? Join YourBank now, 
-      and let us help you achieve your financial goals with our tailored solutions and 
-      exceptional customer service'/>
-      <FooterTemplate/>
+    {routes}
     </>
   )
 }

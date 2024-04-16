@@ -1,10 +1,11 @@
 .container{
     display: grid;
-    width: 100%;
-    padding: 0% var(--padding-sides);
+    width: 84%;
+    margin: 0% var(--padding-sides);
     margin-top: 6%;
     margin-bottom: 8%;
     background-color: var(--gray-11);
+    padding: 2% 4%;
     box-sizing: border-box;
 }
 

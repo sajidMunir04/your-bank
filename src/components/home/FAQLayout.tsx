@@ -1,12 +1,13 @@
 import LayoutDescription from "../shared/LayoutDescription";
-import LayoutHeader from "../shared/LayoutHeader";
-import LayoutHeading from "../shared/LayoutHeading";
 import FAQElement from "./FAQElement";
 import styles from "./FAQLayout.module.css";
 import headingStyles from "../shared/LayoutHeading.module.css";
+import { useState } from "react";
 
 function FAQLayout()
 {
+    const [contentHidden,setHiddenState] = useState(true);
+
     return (<div className={styles.container}>
         <div>
             <h2 className={headingStyles.headingText}>
@@ -30,6 +31,27 @@ function FAQLayout()
             Simply visit our website and click on the Open an Account button. Follow the prompts, 
             provide the required information, and complete the application process. If you have any 
             questions or need assistance, our customer support team is available to help."/>
+                                    <FAQElement question="How do I open an account with YourBank?" answer="Opening an account with YourBank is easy. 
+            Simply visit our website and click on the Open an Account button. Follow the prompts, 
+            provide the required information, and complete the application process. If you have any 
+            questions or need assistance, our customer support team is available to help."/>
+                                    <FAQElement question="How do I open an account with YourBank?" answer="Opening an account with YourBank is easy. 
+            Simply visit our website and click on the Open an Account button. Follow the prompts, 
+            provide the required information, and complete the application process. If you have any 
+            questions or need assistance, our customer support team is available to help."/>
+                                    <FAQElement question="How do I open an account with YourBank?" answer="Opening an account with YourBank is easy. 
+            Simply visit our website and click on the Open an Account button. Follow the prompts, 
+            provide the required information, and complete the application process. If you have any 
+            questions or need assistance, our customer support team is available to help."/>
+                                    <FAQElement question="How do I open an account with YourBank?" answer="Opening an account with YourBank is easy. 
+            Simply visit our website and click on the Open an Account button. Follow the prompts, 
+            provide the required information, and complete the application process. If you have any 
+            questions or need assistance, our customer support team is available to help."/>
+        </div>
+        <div className={styles.buttonContainer}>
+            <div>
+                <button className={styles.button} type='button'>Load All Faq's</button>
+            </div>
         </div>
     </div>);
 }

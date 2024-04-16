@@ -12,7 +12,7 @@ function TestimonialLayout()
         <div className={styles.contentSection}>
             <div className={styles.buttonSection}>
                 <div className={styles.button}>
-
+                    <img className={styles.buttonImage} src="/images/arrows/leftArrow.svg"/>
                 </div>
             </div>
             <div className={styles.contentContainer}>
@@ -37,7 +37,7 @@ function TestimonialLayout()
             </div>
             <div className={styles.buttonSection}>
                 <div className={styles.button}>
-                    
+                    <img className={styles.buttonImage} src="/images/arrows/rightArrow.svg"/>
                 </div>
             </div>
         </div>

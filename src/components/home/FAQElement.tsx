@@ -9,8 +9,8 @@ interface Props {
 function FAQElement(props : Props)
 {
     return(<div className={styles.container}>
-        <div>
-            <p>{props.question}</p>
+        <div className={styles.questionContainer}>
+            <p className={styles.questionText}>{props.question}</p>
         </div>
         <div>
             <p>{props.answer}</p>

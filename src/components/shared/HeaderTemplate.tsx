@@ -11,24 +11,24 @@ function HeaderTemplate()
         </div>
         <nav className={styles.navBar}>
             <div>
-                <a className={styles.navLinkText} href='#'>Home</a>
+                <a className={styles.navLinkText} href='/'>Home</a>
             </div>
             <div>
-                <a className={styles.navLinkText} href='#'>Careers</a>
+                <a className={styles.navLinkText} href='/careers'>Careers</a>
             </div>
             <div>
-                <a className={styles.navLinkText} href='#'>About</a>
+                <a className={styles.navLinkText} href='/about'>About</a>
             </div>
             <div>
-                <a className={styles.navLinkText} href='#'>Security</a>
+                <a className={styles.navLinkText} href='/security'>Security</a>
             </div>
         </nav>
         <div className={styles.accountButtons}>
             <div className={styles.accountButton}>
-                <LinkButton buttonText='Sign Up' link='#'/>
+                <LinkButton buttonText='Sign Up' link='/signup'/>
             </div>
             <div className={styles.accountButton}>
-                <LinkButtonColored buttonText='Login' link='#'/>
+                <LinkButtonColored buttonText='Login' link='/login'/>
             </div>
         </div>
     </div>);

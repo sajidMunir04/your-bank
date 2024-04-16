@@ -1,5 +1,5 @@
 import './App.css'
-import { createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/Home'
 import Careers from './pages/Careers'
 import About from './pages/About'
@@ -38,9 +38,7 @@ function App() {
       }
     ])
   return (
-    <>
-    {routes}
-    </>
+    <RouterProvider router={routes}/>
   )
 }
 

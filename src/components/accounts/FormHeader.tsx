@@ -1,3 +1,5 @@
+import styles from "./FormHeader.module.css";
+
 
 interface Props {
     heading: string,
@@ -6,9 +8,9 @@ interface Props {
 
 function FormHeader(props : Props)
 {
-    return (<div>
-        <h2>{props.heading}</h2>
-        <p>{props.description}</p>
+    return (<div className={styles.container}>
+        <h2 className={styles.heading}>{props.heading}</h2>
+        <p className={styles.descriptionText}>{props.description}</p>
     </div>)
 }
 

@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.heading{
+    font-family: Lexend-Medium;
+    font-size: 42px;
+    color: var(--green-60);
+}
+
+.descriptionText{
+    margin: 0%;
+}

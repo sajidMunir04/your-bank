@@ -1,3 +1,4 @@
+import GradientIconBackground from "../shared/GradientIconBackground";
 
 
 interface Props{
@@ -6,7 +7,7 @@ interface Props{
 
 function FormExternalServiceButton(props : Props)
 {
-    return (<div><a href='#'><img src={props.imageLink}/></a></div>);
+    return (<GradientIconBackground imageLink={props.imageLink}/>);
 }
 
 export default FormExternalServiceButton;

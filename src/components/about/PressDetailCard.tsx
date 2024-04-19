@@ -1,3 +1,5 @@
+import stlyes from "./PressDetailCard.module.css";
+
 
 interface Props{
     imageLink: string,
@@ -9,13 +11,13 @@ interface Props{
 
 function PressDetailCard(props : Props)
 {
-    return (<div>
-        <div>
-            <img src={props.imageLink}/>
+    return (<div className={stlyes.container}>
+        <div className={stlyes.imageContainer}>
+            <img className={stlyes.image} src={props.imageLink}/>
         </div>
         <div>
-            <p>{props.headingText}</p>
-            <div>
+            <p className={stlyes.headingText}>{props.headingText}</p>
+            <div className={stlyes.detailsContainer}>
                 <p>Location: {props.location}</p>
                 <p>Date: {props.date}</p>
             </div>

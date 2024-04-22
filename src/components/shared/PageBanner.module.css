@@ -3,10 +3,11 @@
     width: 84%;
     margin: auto;
     margin-top: 4%;
-    height: 480px;
+    height: 540px;
     padding: 2% 2%;
     box-sizing: border-box;
     background-color: var(--gray-11);
+    margin-bottom: 8%;
 }
 
 .backgroundContainer{
@@ -27,6 +28,7 @@
 .bgImage{
     width: 80%;
     height: 100%;
+    aspect-ratio: 1.8;
 }
 
 .contentContainer{
@@ -39,5 +41,19 @@
 }
 
 .textContainer{
-    width: 50%;
+    padding: 2% 4%;
+    box-sizing: border-box;
+    width: 54%;
+    background-color: var(--gray-10);
+    border-bottom-right-radius: 60px;
+}
+
+.heading{
+    font-family: Lexend-Medium;
+    font-size: 54px;
+    color: var(--white);
+}
+
+.coloredText{
+    color: var(--green-60);
 }

@@ -12,7 +12,7 @@ function PromotionalBanner(props : Props)
 {
     return (<div className={styles.container}>
         <div className={styles.backgroundContainer}>
-
+            <img src="/images/home/design.svg"/>
         </div>
         <div className={styles.contentContainer}>
             <div className={styles.textContainer}>

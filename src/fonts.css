@@ -43,3 +43,8 @@
     font-family: Lexend-Thin;
     src: url(../public/fonts/lexend/Lexend-Thin.ttf);
 }
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../public/fonts/inter/Inter-Regular.ttf);
+}

@@ -6,7 +6,7 @@ import styles from './HeaderTemplate.module.css';
 function HeaderTemplate()
 {
     return (<div className={styles.container}>
-        <div>
+        <div className={styles.logoContainer}>
             <img className={styles.logoImage} src='/Logo.png'/>
         </div>
         <nav className={styles.navBar}>

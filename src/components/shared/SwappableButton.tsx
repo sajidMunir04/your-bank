@@ -4,11 +4,9 @@ import styles from "./SwappableButton.module.css";
 
 interface Props {
     leftButtonText : string,
-    leftButtonLink : string,
     rightButtonText : string,
-    rightButtonLink : string,
-    onLeftButtonClick? : VoidFunction,
-    onRightButtonClick? : VoidFunction
+    onLeftButtonClick: () => void,
+    onRightButtonClick: () => void
 }
 
 function SwappableButton(props : Props)
@@ -16,12 +14,12 @@ function SwappableButton(props : Props)
     const [leftButtonSelected,setButtonState] = useState(true);
 
     const handleLeftClick = () => {
-        props.onLeftButtonClick;
+        props.onLeftButtonClick();
         setButtonState(true);
     }
 
     const handleRightClick = () => {
-        props.onRightButtonClick;
+        props.onRightButtonClick();
         setButtonState(false);
     }
 

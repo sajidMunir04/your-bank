@@ -2,17 +2,17 @@
     width: 72px;
     height: 72px;
     border-radius: 50px;
-    background-color: var(--gray-15);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: var(--gray-11);
 }
 
 .subContainer{
-    background-color: #c9ff3360;
-    width: 80%;
-    height: 80%;
+    background: linear-gradient(to bottom, rgba(55, 118, 55, 0.4) 0%, rgba(15, 68, 28, 0.51) 50%, rgba(3, 71, 35, 0.4) 100%);
+    width: 76%;
+    height: 76%;
     border-radius: 50px;
     display: flex;
     flex-direction: row;

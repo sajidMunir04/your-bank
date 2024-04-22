@@ -31,6 +31,11 @@
 .headingText{
     font-family: Lexend-Medium;
     font-size: 26px;
+    color: var(--white);
+}
+
+.abstractImageContainer{
+    position: absolute;
 }
 
 .figuresText{
@@ -77,6 +82,12 @@
 .statsSection{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statPoint{
+    width: 27%;
 }
 
 .lastOrder{

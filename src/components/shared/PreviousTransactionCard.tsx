@@ -3,12 +3,14 @@ import styles from "./PreviousTransactionCard.module.css";
 
 interface Props{
     name: string,
-    amount: number
+    amount: number,
+    zIndex: number,
+    scale: number
 }
 
 function PreviousTransactionCard(props : Props)
 {
-    return (<div className={styles.container}>
+    return (<div className={styles.container} style={{zIndex:`${props.zIndex}`,width:`${props.scale * 100}%`}}>
         <div className={styles.subContainer}>
             <div className={styles.imageSection}>
                 <div className={styles.imageContainer}>

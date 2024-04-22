@@ -1,3 +1,6 @@
+import styles from "./TestimonialCard.module.css";
+
+
 interface Props{
     imageLink: string,
     testimonialText: string,
@@ -6,7 +9,7 @@ interface Props{
 
 function TestimonialCard(props : Props)
 {
-    return (<div>
+    return (<div className={styles.container}>
         <div>
             <img src={props.imageLink}/>
         </div>

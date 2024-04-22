@@ -5,9 +5,9 @@ import styles from "./MainBanner.module.css";
 function MainBanner()
 {
     return (<div className={styles.container}>
-        <div className={styles.section}>
+        <div className={styles.textSection}>
             <div className={styles.infoPoint}>
-                <div><img src="/Icon(10).png"/></div>
+                <div className={styles.infoPointImageContainer}><img className={styles.infoPointImage} src="/images/home/tick.svg"/></div>
                 <p className={styles.infoPointText}>No LLC Required, No Credit Check.</p>
             </div>
             <h1 className={styles.headingText}>

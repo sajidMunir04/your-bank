@@ -12,7 +12,7 @@ function InfoCard(props : Props)
     return (<div className={styles.container}>
             <div className={styles.headSection}>
             <GradientIconBackground imageLink={props.imageLink}/>
-            <p>
+            <p className={styles.headingText}>
                 {props.heading}
             </p>
             </div>

@@ -49,3 +49,8 @@
     border-radius: 38px;
     margin: 4% 0%;
 }
+
+.selectedButton{
+    background-color: var(--gray-10);
+    color: var(--green-60);
+}

@@ -9,6 +9,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 2% 2%;
 }
 
 .singleButton{
@@ -17,18 +18,19 @@
     background: none;
     border: none;
     display: inline-block;
-    margin-inline: 6%;
+    margin-inline: 4%;
     text-decoration: none;
     color: var(--white-color);
     font-family: Lexend-Regular;
     font-size: 15px;
     box-sizing: border-box;
+    padding: 3% 4%;
+    width: 42%;
 }
 
 .selectedButton{
     background-color: var(--green-60);
     color: var(--gray-11);
-    padding: 4% 4%;
     border-radius: 30px;
 }
 

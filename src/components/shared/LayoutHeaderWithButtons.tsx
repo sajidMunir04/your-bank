@@ -8,9 +8,9 @@ interface Props{
     headingTextColored : string,
     description: string,
     leftButtonText : string,
-    leftButtonLink : string,
     rightButtonText : string,
-    rightButtonLink : string
+    leftButtonEvent: () => void,
+    rightButtonEvent: () => void
 }
 
 function LayoutHeaderWithButtons(props : Props)
@@ -24,8 +24,8 @@ function LayoutHeaderWithButtons(props : Props)
                 <LayoutDescription text={props.description}/>
             </div>
             <div className={styles.buttonsSection}>
-                <SwappableButton leftButtonText={props.leftButtonText} leftButtonLink={props.leftButtonLink}
-                rightButtonText={props.rightButtonText} rightButtonLink={props.rightButtonLink}/>
+                <SwappableButton leftButtonText={props.leftButtonText} onLeftButtonClick={props.leftButtonEvent}
+                rightButtonText={props.rightButtonText} onRightButtonClick={props.rightButtonEvent}/>
             </div>
         </div>
     </div>);

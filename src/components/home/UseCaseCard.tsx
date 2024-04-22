@@ -7,7 +7,8 @@ interface Props{
     description: string;
     statPoints: StatsPoint[];
     textSectionOrder: number;
-    reverseOrder: boolean
+    reverseOrder: boolean,
+    reverseAbstractImage?: boolean
 }
 
 export type InfoPoint = {
@@ -23,6 +24,12 @@ export type StatsPoint = {
 function UseCaseCard(props : Props)
 {
     return (<div className={styles.container}>
+        {!props.reverseAbstractImage && <div className={styles.abstractImageContainer}>
+            <img src="/images/home/design.svg"/>
+        </div>}
+        {props.reverseAbstractImage && <div className={styles.abstractImageContainer} style={{ right:'8.4%',rotate:'90deg'}}>
+            <img src="/images/home/design.svg"/>
+        </div>}
         <div className={`${styles.contentSection} ${props.reverseOrder && styles.lastOrder}`}>
             {props.infoPoints.map((point) => (
                 <div className={styles.infoPoint}>
@@ -39,7 +46,7 @@ function UseCaseCard(props : Props)
                 <p className={styles.descriptionText}>{props.description}</p>
             </div>
             <div className={styles.statsSection}>
-                {props.statPoints.map((point) => (<div>
+                {props.statPoints.map((point) => (<div className={styles.statPoint}>
                     <p className={styles.figuresText}>{point.figure}%</p>
                     <p className={styles.figureInfoText}>{point.text}</p>
                 </div>))}

@@ -11,9 +11,17 @@
 .section{
     width: 44%;
     height: 100%;
+    margin-right: 3%;
+}
+
+.textSection{
+    margin-top: 4%;
+    width: 44%;
+    height: 100%;
 }
 
 .headingText{
+    color: var(--white);
     font-family: Lexend-Medium;
     font-size: 42px;
 }
@@ -26,12 +34,23 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #262626;
-    width: max-content;
+    justify-content: space-between;
+    background-color: var(--gray-15);
+    width: 51%;
     padding: 0% 2%;
-    height: fit-content;
+    height: 40px;
     border-radius: 50px;
 }
+
+.infoPointImageContainer{
+    display: flex;
+}
+
+.infoPointImage{
+    margin: auto;
+    width: 100%;
+}
+
 .infoPointText{
     font-family: Lexend-Light;
     font-size: 16px;

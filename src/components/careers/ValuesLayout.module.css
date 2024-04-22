@@ -5,6 +5,7 @@
 }
 
 .contentContainer{
+    margin-top: 6%;
     width: 100%;
     display: flex;
     justify-content: space-between;

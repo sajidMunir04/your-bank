@@ -16,6 +16,7 @@
 }
 
 .logoImage{
+    margin: auto;
     width: 70%;
     height: auto;
 }
@@ -34,6 +35,11 @@
     text-decoration: none;
     color: var(--white-color);
 }
+
+.logoContainer{
+    display: flex;
+}
+
 
 .accountButtons{
     display: flex;

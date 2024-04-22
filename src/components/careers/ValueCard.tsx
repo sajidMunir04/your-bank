@@ -8,7 +8,7 @@ interface Props {
 function ValueCard(props : Props)
 {
     return (<div className={styles.container}>
-        <p>{props.heading}</p>
+        <h3 className={styles.headingText}>{props.heading}</h3>
         <p>{props.description}</p>
     </div>);
 }

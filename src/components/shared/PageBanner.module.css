@@ -49,6 +49,7 @@
 }
 
 .heading{
+    margin-top: 0%;
     font-family: Lexend-Medium;
     font-size: 54px;
     color: var(--white);
@@ -56,4 +57,8 @@
 
 .coloredText{
     color: var(--green-60);
+}
+
+.subText{
+    margin: 0%;
 }

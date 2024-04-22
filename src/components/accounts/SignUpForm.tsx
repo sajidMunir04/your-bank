@@ -8,8 +8,8 @@ import styles from "./SignUpForm.module.css";
 function SignUpForm()
 {
     return (<div className={styles.container}>
-        <div>
-
+        <div className={styles.absImageContainer}>
+            <img src="/images/home/design.svg"/>
         </div>
         <div className={styles.contentContainer}>
         <FormHeader heading="Sign Up" description="Join our community today! Create an account 
@@ -37,13 +37,13 @@ function SignUpForm()
                     <FormButton buttonText="Login"/>
                 </div>
             </div>
-            <div>
+            <div className={styles.line}>
                 <FormORSeparator/>
             </div>
             <div className={styles.externalLinkSection}>
-                <FormExternalServiceButton imageLink="/Icon(9).png"/>
-                <FormExternalServiceButton imageLink="/Icon(9).png"/>
-                <FormExternalServiceButton imageLink="/Icon(9).png"/>
+                <FormExternalServiceButton imageLink="/images/common/google.svg"/>
+                <FormExternalServiceButton imageLink="/images/common/facebook.svg"/>
+                <FormExternalServiceButton imageLink="/images/common/apple.svg"/>
             </div>
         </form>
         </div>

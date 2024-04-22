@@ -13,9 +13,9 @@ function JobCard(props : Props)
 {
     return (<div className={styles.container}>
         <p className={styles.mainHeading}>{props.jobHeading}</p>
-        <div>
-            <p>Location: {props.location}</p>
-            <p>Department: {props.department}</p>
+        <div className={styles.infoContainer}>
+            <p className={styles.info}>Location: {props.location}</p>
+            <p className={styles.info}>Department: {props.department}</p>
         </div> 
         <p className={styles.subHeading}>About this job</p>
         <p>{props.jobDescription}</p>
@@ -23,8 +23,8 @@ function JobCard(props : Props)
         <ul className={styles.list}>
             {props.requirements.map((jobreq) => <li className={styles.listItem}>
                 <div className={styles.listItemsContainer}>
-                    <div>
-                        <img src="/Icon(7).png"/>
+                    <div className={styles.regImgContainer}>
+                        <img className={styles.regImg} src="/Icon(7).png"/>
                     </div>
                     <p className={styles.descriptionText}>
                         {jobreq}

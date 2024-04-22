@@ -34,13 +34,13 @@ function LoginForm()
                     <FormButton buttonText="Sign Up"/>
                 </div>
             </div>
-            <div>
+            <div className={stlyes.lineArea}>
                 <FormORSeparator/>
             </div>
             <div className={stlyes.externalLinkSection}>
-                <FormExternalServiceButton imageLink="/Icon(9).png"/>
-                <FormExternalServiceButton imageLink="/Icon(9).png"/>
-                <FormExternalServiceButton imageLink="/Icon(9).png"/>
+                <FormExternalServiceButton imageLink="/images/common/google.svg"/>
+                <FormExternalServiceButton imageLink="/images/common/facebook.svg"/>
+                <FormExternalServiceButton imageLink="/images/common/apple.svg"/>
             </div>
         </form>     
         </div> 

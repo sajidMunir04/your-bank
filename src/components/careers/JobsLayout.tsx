@@ -11,7 +11,7 @@ function JobsLayout()
             innovation, and a passion for customer service. Join our team and be part of shaping a brighter 
             future in the banking industry"/>
         </div>
-        <div>
+        <div className={styles.contentContainer}>
             <JobCard jobHeading="Relationship Manager" location="India" department="Retail Banking"
             jobDescription="As a Relationship Manager at YourBank, you will be responsible for developing and maintaining relationships with our valued customers. You will proactively identify their financial needs and offer tailored solutions to help them achieve their goals. We are seeking individuals with excellent communication skills, a strong sales acumen, and a 
             passion for delivering exceptional customer service." requirements={['Bachelor\'s degree in Business, Finance, or a related field',

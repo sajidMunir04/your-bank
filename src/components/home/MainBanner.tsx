@@ -4,6 +4,7 @@ import styles from "./MainBanner.module.css";
 
 function MainBanner()
 {
+
     return (<div className={styles.container}>
         <div className={styles.textSection}>
             <div className={styles.infoPoint}>

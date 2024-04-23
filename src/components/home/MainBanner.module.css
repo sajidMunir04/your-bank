@@ -90,8 +90,13 @@
 
     .infoPoint{
         font-size: 16px;
-        width: 82%;
+        width: max-content;
         margin: auto;
+    }
+
+    .infoPointText{
+        font-size: 14px;
+        white-space: nowrap;
     }
 
     .section{

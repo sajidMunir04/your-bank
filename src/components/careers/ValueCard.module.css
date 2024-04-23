@@ -12,3 +12,14 @@
     color: var(--gray-30);
     margin: 0%;
 }
+
+@media (max-width: 700px) {
+    .container{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .headingText{
+        font-size: 28px;
+    }
+}

@@ -77,3 +77,30 @@
     flex-direction: row;
     justify-content: center;
 }
+
+@media (max-width: 700px) {
+    .container{
+        height: 800px;
+    }
+
+    .inputContainer{
+        height: 50%;
+        flex-direction: column;
+    }
+
+
+    .inputFieldContainer{
+        height: 12%;
+        width: 100%;
+        margin-bottom: 12%;
+    }
+
+    .buttonsContainer{
+        width: 100%;
+    }
+
+    .line{
+        width: 100%;
+        font-size: 12px;
+    }
+}

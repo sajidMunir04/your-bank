@@ -67,3 +67,29 @@
 .regImg{
     margin: auto;
 }
+
+@media (max-width: 700px) {
+    .container{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .infoContainer{
+        flex-direction: column;
+        white-space: nowrap;
+        height: max-content;
+    }
+
+    .info{
+        width: max-content;
+        background-color: var(--gray-10);
+        padding: 2% 3%;
+        border: 2px solid var(--gray-15);
+        border-radius: 50px;
+        margin-top: 3%;
+    }
+
+    .linkButtonContainer{
+        width: 46%;
+    }
+}

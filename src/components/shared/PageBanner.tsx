@@ -22,7 +22,7 @@ function PageBanner(props : Props)
             <div className={styles.textContainer}>
                 {props.infoText != "" && <p className={styles.subText}>{props.infoText}</p>}
                 <h1 className={styles.heading}>{props.headingTextWhite}<span className={styles.coloredText}>{props.headingTextColored}</span>{props.headingTextWhiteRemaining}</h1>
-                <p>{props.description}</p>
+                <p className={styles.descriptionContainer}>{props.description}</p>
             </div>
         </div>
     </div>);

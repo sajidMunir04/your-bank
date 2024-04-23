@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;  
     justify-content: space-between; 
-    height: 480px;
+    height: fit-content;
     margin-top: 4%;
 }
 
@@ -110,4 +110,27 @@
     border: 1px solid var(--gray-15);
     border-radius: 28px;
     padding: 2% 4%;
+}
+
+@media (max-width: 700px) {
+    .container{
+        flex-direction: column;
+    }
+    
+    .contentSection{
+        width: 100%;
+    }
+    
+    .textSection{
+        width: 100%;
+    }
+
+    .statsSection{
+        flex-direction: column;
+    }
+
+    .statPoint{
+        text-align: center;
+        width: 70%;
+    }
 }

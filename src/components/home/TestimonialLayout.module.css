@@ -43,7 +43,9 @@
     justify-content: space-between;
 }
 
-.content{
-    width: 30%;
-    height: 100%;
+@media (max-width: 700px) {
+    .contentContainer{
+        width: 80%;
+        overflow: scroll;
+    }
 }

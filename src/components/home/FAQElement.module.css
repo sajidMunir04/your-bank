@@ -16,3 +16,9 @@
     font-size: 18px;
     color: var(--white);
 }
+
+@media (max-width: 700px) {
+    .container{
+        width: 100%;
+    }
+}

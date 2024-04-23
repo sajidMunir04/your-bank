@@ -24,46 +24,34 @@ function TestimonialLayout()
             <div className={styles.contentContainer}>
                 {selectedContent == 'individual' &&
                     <>
-                    <div className={styles.content}>
                     <TestimonialCard imageLink="/Icon(4).png" testimonialText="I recently started my own business, and YourBank 
                     has been instrumental in helping me set up my business accounts 
                     and secure the financing I needed. Their expert guidance and tailored 
                     solutions have been invaluable." customerName="John D"/>
-                </div>
-                <div className={styles.content}>
                     <TestimonialCard imageLink="/Icon(4).png" testimonialText="I recently started my own business, and YourBank 
                     has been instrumental in helping me set up my business accounts 
                     and secure the financing I needed. Their expert guidance and tailored 
                     solutions have been invaluable." customerName="John D"/>
-                </div>
-                <div className={styles.content}>
-                    <TestimonialCard imageLink="/Icon(4).png" testimonialText="I recently started my own business, and YourBank 
+                                        <TestimonialCard imageLink="/Icon(4).png" testimonialText="I recently started my own business, and YourBank 
                     has been instrumental in helping me set up my business accounts 
                     and secure the financing I needed. Their expert guidance and tailored 
                     solutions have been invaluable." customerName="John D"/>
-                </div>
                     </>
                 }
                 {selectedContent == 'business' &&
                     <>
-                    <div className={styles.content}>
                     <TestimonialCard imageLink="/Icon(4).png" testimonialText="I recently started my own business, and YourBank 
                     has been instrumental in helping me set up my business accounts 
                     and secure the financing I needed. Their expert guidance and tailored 
                     solutions have been invaluable." customerName="Business 1"/>
-                </div>
-                <div className={styles.content}>
-                    <TestimonialCard imageLink="/Icon(4).png" testimonialText="I recently started my own business, and YourBank 
+                                        <TestimonialCard imageLink="/Icon(4).png" testimonialText="I recently started my own business, and YourBank 
                     has been instrumental in helping me set up my business accounts 
                     and secure the financing I needed. Their expert guidance and tailored 
                     solutions have been invaluable." customerName="Business 2"/>
-                </div>
-                <div className={styles.content}>
-                    <TestimonialCard imageLink="/Icon(4).png" testimonialText="I recently started my own business, and YourBank 
+                                        <TestimonialCard imageLink="/Icon(4).png" testimonialText="I recently started my own business, and YourBank 
                     has been instrumental in helping me set up my business accounts 
                     and secure the financing I needed. Their expert guidance and tailored 
                     solutions have been invaluable." customerName="Business 3"/>
-                </div>
                     </>
                 }
             </div>

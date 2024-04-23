@@ -54,7 +54,7 @@ function FooterTemplate()
                         <img className={styles.socialLinkImage} src="/images/common/twitter.svg"/>
                     </div>
                 </div>
-                <div>
+                <div className={styles.textContainer}>
                     <p>Your Bank All Rights Reserved</p>
                 </div>
                 <div className={styles.externalLinkContainer}>

@@ -52,3 +52,27 @@
     width: 50%;
     height: 90%;
 }
+
+.menuButton{
+    background-color: var(--green-60);
+    width: 20%;
+    border-radius: 28px;
+    height: 60%;
+    display: none;
+}
+
+.menuButtonImage{
+    margin: auto;
+    width: 40%;
+}
+
+
+@media (max-width: 700px) {
+    .navBar{
+        display: none;
+    }
+    
+    .menuButton{
+        display: flex;
+    }
+}

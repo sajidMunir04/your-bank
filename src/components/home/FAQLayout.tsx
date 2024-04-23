@@ -19,7 +19,7 @@ function FAQLayout()
     }
 
     return (<div className={styles.container}>
-        <div>
+        <div className={styles.header}>
             <h2 className={headingStyles.headingText}>
                 <span className={headingStyles.coloredText}>Frequently </span>Asked Questions</h2>
             <LayoutDescription text="Still you have any questions? Contact our Team via support@yourbank.com"/>

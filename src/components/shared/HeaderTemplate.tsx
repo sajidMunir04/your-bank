@@ -11,25 +11,30 @@ function HeaderTemplate()
         </div>
         <nav className={styles.navBar}>
             <div>
-                <a className={styles.navLinkText} href='/'>Home</a>
+                <div>
+                    <a className={styles.navLinkText} href='/'>Home</a>
+                </div>
+                <div>
+                    <a className={styles.navLinkText} href='/careers'>Careers</a>
+                </div>
+                <div>
+                    <a className={styles.navLinkText} href='/about'>About</a>
+                </div>
+                <div>
+                    <a className={styles.navLinkText} href='/security'>Security</a>
+                </div>
             </div>
-            <div>
-                <a className={styles.navLinkText} href='/careers'>Careers</a>
-            </div>
-            <div>
-                <a className={styles.navLinkText} href='/about'>About</a>
-            </div>
-            <div>
-                <a className={styles.navLinkText} href='/security'>Security</a>
+            <div className={styles.accountButtons}>
+                <div className={styles.accountButton}>
+                    <LinkButton buttonText='Sign Up' link='/signup'/>
+                </div>
+                <div className={styles.accountButton}>
+                    <LinkButtonColored buttonText='Login' link='/login'/>
+                </div>
             </div>
         </nav>
-        <div className={styles.accountButtons}>
-            <div className={styles.accountButton}>
-                <LinkButton buttonText='Sign Up' link='/signup'/>
-            </div>
-            <div className={styles.accountButton}>
-                <LinkButtonColored buttonText='Login' link='/login'/>
-            </div>
+        <div className={styles.menuButton}>
+            <img className={styles.menuButtonImage} src='/images/common/menu.svg'/>
         </div>
     </div>);
 }

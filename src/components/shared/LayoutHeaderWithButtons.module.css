@@ -22,3 +22,22 @@
     width: 27%;
     height: 80%;
 }
+
+@media (max-width: 700px) {
+    
+
+    .subContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .descriptionSection{
+        width: 100%;
+    }
+
+    .buttonsSection{
+        width: 100%;
+    }
+}

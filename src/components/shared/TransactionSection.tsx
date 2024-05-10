@@ -1,11 +1,9 @@
-import { ChangeEvent, useRef, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import PreviousTransactionCard from "./PreviousTransactionCard";
 import styles from "./TransactionSection.module.css";
 
 function TransactionSection()
 {
-    const currencyOutputRef = useRef<HTMLInputElement>();
-
     //Initially this only supports INR TO USD conversion,so can use static definitions
 
     const unitPrice : number = 0.012;

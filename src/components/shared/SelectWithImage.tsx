@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Select, { ActionMeta, Options } from 'react-select';
+import { useState } from 'react';
+import Select, { ActionMeta } from 'react-select';
 
 export interface CustomOption {
     value: string,

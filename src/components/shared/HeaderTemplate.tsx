@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import LinkButton from './LinkButton';
 import LinkButtonColored from './LinkButtonColored';
 import styles from './HeaderTemplate.module.css';

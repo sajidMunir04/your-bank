@@ -1,8 +1,21 @@
+import { ChangeEvent, useRef, useState } from "react";
 import PreviousTransactionCard from "./PreviousTransactionCard";
 import styles from "./TransactionSection.module.css";
 
 function TransactionSection()
 {
+    const currencyOutputRef = useRef<HTMLInputElement>();
+
+    //Initially this only supports INR TO USD conversion,so can use static definitions
+
+    const unitPrice : number = 0.012;
+
+    const [convertedAmount,setConvertedAmount] = useState(0);
+
+    const handleCurrencyInput = ( e: ChangeEvent<HTMLInputElement>) => {
+        setConvertedAmount(parseInt(e.target.value) * unitPrice);
+    }
+
     return (<div className={styles.container}>
         <div className={styles.backgroundSection}>
             <div className={styles.bgImageContainer}>
@@ -36,7 +49,7 @@ function TransactionSection()
                                 </div>
                             </div>
                             <div className={styles.currencyInputContainer}>
-                                <input className={styles.currencyInput} type="number" placeholder="000"/>
+                                <input className={styles.currencyInput} type="number" defaultValue={0} onChange={handleCurrencyInput}/>
                             </div>
                         </div>
                         <div className={styles.currencySection}>
@@ -52,7 +65,7 @@ function TransactionSection()
                                 </div>
                             </div>
                             <div className={styles.currencyInputContainer}>
-                                <input className={styles.currencyInput} type="number" placeholder="000"/>
+                                <input className={styles.currencyInput} type="number" placeholder="000" value={convertedAmount}/>
                             </div>
                         </div>
                     </div>

@@ -40,9 +40,10 @@
 
 .butttonContainer{
     width: 12%;
+    height: 40px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
 
     .container{
         text-align: center; 

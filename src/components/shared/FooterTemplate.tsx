@@ -9,16 +9,16 @@ function FooterTemplate()
             </div>
             <div className={styles.navContainer}>
                 <div>
-                    <a className={styles.navlink} href="#">Home</a>
+                    <a className={styles.navlink} href="/">Home</a>
                 </div>
                 <div>
-                    <a className={styles.navlink} href="#">Careers</a>
+                    <a className={styles.navlink} href="/careers">Careers</a>
                 </div>
                 <div>
-                    <a className={styles.navlink} href="#">About</a>
+                    <a className={styles.navlink} href="/about">About</a>
                 </div>
                 <div>
-                    <a className={styles.navlink} href="#">Security</a>
+                    <a className={styles.navlink} href="/security">Security</a>
                 </div>
             </div>
         </div>

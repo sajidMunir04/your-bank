@@ -121,7 +121,7 @@
     margin-right: 2%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
     .container{
         height: max-content;
     }
@@ -139,9 +139,10 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        margin-top: 4%;
     }
     .contactInfo{
-        width: 50%;
+        width: 32%;
     }
 
     .contactInfoText{
@@ -173,5 +174,17 @@
         width: 100%;
         justify-content: center;
         position: absolute;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .contactInfoContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactInfo{
+        width: 50%;
     }
 }

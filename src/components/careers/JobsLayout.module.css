@@ -12,3 +12,9 @@
     flex-wrap: wrap;
 }
 
+@media (max-width: 1100px) {
+    .contentContainer{
+        flex-direction: column;
+    }
+}
+
